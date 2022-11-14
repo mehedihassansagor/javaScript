@@ -10,16 +10,62 @@
 <div>helo</div>
     <script>
 
-        var text = Number(true)
-        document.write(text)
-        console.log("hello")
+        // var text = Number(true)
+        // document.write(text)
+        // console.log("hello")
 
-        var number = Math.random() * 5
-        console.log(number)
-        var roundnuber = Math.round(number)
-        console.log(roundnuber)
-        var ceilNumber = Math.ceil(number)
-        console.log(ceilNumber)
+        // var number = Math.random() * 5
+        // console.log(number)
+        // var roundnuber = Math.round(number)
+        // console.log(roundnuber)
+        // var ceilNumber = Math.ceil(number)
+        // console.log(ceilNumber)
+
+        //object constractor
+
+        // function student(name, age, lang){
+        //     this.name = name;
+        //     this.age =  age ;
+        //     this.lang = lang;
+
+        //    this.display = function(){
+        //     console.log(this.name)
+        //     console.log(this.age)
+        //     console.log(this.lang)
+        //    }
+
+        // }
+        // var student1 = new student("sagor", 188, "ban");
+        // var student2 = new student("sagor2", 189, "hin");
+        // var student3 = new student("sagor3", 185, "chan");
+        
+        //             student1.display()
+        //             student2.display()
+        //             student3.display()
+
+        // random nmber game
+
+var getNumber = Number(prompt());
+
+var finalWon = 0;
+var finalLose = 0;
+
+
+var randomNuber = Math.random()*10;
+var finalNumber = Math.round(randomNuber);
+console.log(finalNumber);
+if (getNumber == finalNumber) {
+    document.write("you won");
+    finalWon = finalWon+1;
+
+}else{
+    document.write("you lose");
+    finalLose = finalLose+1;
+}
+
+document.write(finalWon ,"<br/>");
+
+document.write(finalLose)
     </script>
 </body>
 </html>

@@ -45,27 +45,42 @@
 
         // random nmber game
 
-var getNumber = Number(prompt());
+// var getNumber = Number(prompt("enter a number between 1 to 5"));
 
-var finalWon = 0;
-var finalLose = 0;
+// var finalWon = 0;
+// var finalLose = 0;
 
 
-var randomNuber = Math.random()*10;
-var finalNumber = Math.round(randomNuber);
-console.log(finalNumber);
-if (getNumber == finalNumber) {
-    document.write("you won");
-    finalWon = finalWon+1;
+// var randomNuber = Math.random;
 
-}else{
-    document.write("you lose");
-    finalLose = finalLose+1;
-}
+// if (getNumber == randomNuber) {
+//     finalWon = finalWon+1;
+//     document.write("you won the random number was" ," ", + randomNuber , " "," you won " +finalWon, " ", "time");
+    
 
-document.write(finalWon ,"<br/>");
+// }else{
+//     finalLose = finalLose+1;
+//     document.write("you lose the random number was" ," ",+  " "," you lose " +finalLose, " ", "time");
+    
+// }
+// year
 
-document.write(finalLose)
+var date = new Date();
+console.log(date);
+
+var year =  date.getFullYear();
+console.log(year);
+
+var month = date.getMonth() + 1
+console.log(month); // moth start from 0 
+
+var currentDate =  date.getDate();
+console.log(currentDate);
+
+var currentDay = date.getDay()
+console.log(currentDay);
+
+
     </script>
 </body>
 </html>
